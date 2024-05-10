@@ -10,8 +10,14 @@ export enum PAGO {
 
 @Entity()
 export class ViajeEntity {
+    find(arg0: (e: any) => boolean): ViajeEntity {
+        throw new Error('Method not implemented.');
+    }
+    filter(arg0: (e: any) => boolean): ViajeEntity {
+        throw new Error('Method not implemented.');
+    }
     @PrimaryGeneratedColumn()
-    id: number;
+    id: string;
 
     @Column()
     horaInicio: Date;

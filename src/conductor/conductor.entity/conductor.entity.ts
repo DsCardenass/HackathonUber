@@ -19,6 +19,8 @@ export class ConductorEntity {
     @OneToOne(() => ViajeEntity, viaje => viaje.conductor)
     @JoinColumn()
     viaje: ViajeEntity;
+
     @OneToMany(() => VehiculoEntity, vehiculo => vehiculo.conductor)
-    vehiculo: VehiculoEntity[];
+    vehiculo: VehiculoEntity;
+  conductor: any[];
 }
